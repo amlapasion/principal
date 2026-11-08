@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10111a">
+    <title>Mis proyectos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #10111a, #20243a);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 55px;
+        }
+
+        .header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            color: #aeb3c5;
+            font-size: 17px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 40px 25px;
+            transition: 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.11);
+            border-color: #777bff;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .project h2 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #aeb3c5;
+            line-height: 1.6;
+            min-height: 50px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #625cff, #8b65e8);
+            padding: 13px 28px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            filter: brightness(1.2);
+            transform: scale(1.04);
+        }
+
+        footer {
+            margin-top: 55px;
+            color: #777e95;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>Mis proyectos</h1>
+            <p>Bienvenido. Selecciona la aplicación que quieres utilizar.</p>
+        </header>
+
+        <section class="projects">
+
+            <article class="project">
+                <div class="icon">📄</div>
+                <h2>YO AMO PEDEFE</h2>
+                <p>Herramientas para trabajar con documentos PDF, firmar, editar y gestionar archivos.</p>
+                <a class="button"
+                   href="https://amlapasion.github.io/yoamopedefe/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Acceder
+                </a>
+            </article>
+
+            <article class="project">
+                <div class="icon">💻</div>
+                <h2>Mi Código CURRE</h2>
+                <p>Accede a tu aplicación de consulta y gestión de códigos.</p>
+                <a class="button"
+                   href="https://amlapasion.github.io/micodigocuerre/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Acceder
+                </a>
+            </article>
+
+        </section>
+
+        <footer>
+            Mis proyectos · 2026
+        </footer>
+
+    </main>
+
+</body>
+</html>
